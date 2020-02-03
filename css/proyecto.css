@@ -1,0 +1,337 @@
+
+/*----------------------Todo el documento-----------------------*/
+*{
+    font-family: sans-serif, Arial, Helvetica;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Menú*/
+.colores{
+    background: rgb(61, 58, 58);
+}
+
+#menu{
+    margin-top:5px; 
+}
+#menu a{
+    text-decoration: none;
+    padding: 10px;
+    display:inline-block;
+    color: rgb(247, 247, 247);
+}
+
+/*Portada(Imagenes princial)*/
+.slider{
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite alternate linear;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none ;
+}
+
+.slider img{
+    width: 100%;
+}
+
+@keyframes cambio{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+
+/*SubMenu*/
+.contenedor .submenu a{
+    text-decoration: none;
+    padding: 10px;
+    display:inline-block;
+    color: black;
+    
+}
+/*Informacion de pagina*/
+.textoportada{
+    text-align: center;
+    padding: 20px 10% 20px 10%;
+}
+/*Linea separacion de titulo con texto*/
+#linea{
+    background-color: yellow;
+    height: 6px;
+    margin-left: 28%;
+    width: 44%;
+    border-color: yellow;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    filter: blur(2px);
+}
+
+/*Imagenes de Zonas*/
+.button-container-right{
+    display:inline-block;
+    position:relative;
+    width: 100%;
+}
+
+.button-container-right a{
+    position: absolute;
+    bottom:5%;
+    right:20%;
+    background-color: orange;
+    border-radius:100px;
+    color:white;
+    padding:1.5% 3%;
+    text-decoration: none;
+}
+
+.button-container-left{
+    display:inline-block;
+    position:relative;
+    width: 100%;
+}
+
+.button-container-left a{
+    position: absolute;
+    bottom:5%;
+    left: 25%;
+    background-color: orange;
+    border-radius:100px;
+    color:white;
+    padding:1.5% 3%;
+    text-decoration: none;
+}
+
+/*footer*/
+.footer .informacionpagina{
+    background: rgb(61, 58, 58);
+    padding: 2%;
+    color: white;
+}
+.margenbottom{
+    margin-bottom: 15px;
+}
+.footer .informacionpagina a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1%;
+}
+.footer .informacionpagina p{
+    padding: 1%;
+}
+.footer .premios{
+    background: black;
+    text-align: center;
+}
+
+.footer .informacionpagina .redessociales a{
+    display: inline-block;
+}
+
+@media only screen and (max-width: 1023px){
+    .footer .informacionpagina{
+        text-align: center;
+    }
+}
+
+/*----------------------Paginas de zonas-----------------------*/
+
+
+/*Zona norte*/
+
+
+/*Submenú= Se cambio el color de la letra*/
+.contenedor .paginaNorteSubmenu a{
+    color: orange;
+}
+
+/*Linea separacion de titulo con texto*/
+.lineaZonas{
+    height: 2px;
+    margin-left: 45%;
+    width: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    filter: blur(2px);
+}
+
+.norte{
+    border-color: orange;
+    background: orange;
+}
+
+/*texto de información de la zona*/
+.textoportada .informacionZona{
+    text-align: justify;
+    margin-top: 40px;
+}
+
+.textoportada .informacionZona p{
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+/*Boton de regreso al home*/
+.botonHome{
+    text-align: center;
+}
+
+.botonHome a{
+    background-color: orange;
+    border-radius:100px;
+    color:white;
+    padding:1.5% 3%;
+    text-decoration: none;
+    display: inline-block;
+    margin: 3%;
+}
+
+/*Zona central*/
+
+/*cambio de color del submenu*/
+.contenedor .paginaCentralSubmenu a{
+    color: purple;
+}
+
+/*cambio de color de la linea de separación*/
+.centro{
+    border-color: purple;
+    background: purple;
+}
+
+/*Zona sur*/
+
+/*cambio de color del submenu*/
+.contenedor .paginaSurSubmenu a{
+    color: green;
+}
+/*cambio de color de la linea de separación*/
+.sur{
+    border-color: green;
+    background: green;
+}
+
+
+/*----------------------Pagina de sobre nosotros-----------------------*/
+
+/*Imagenes de nosotros*/
+.contenedor .image{
+    text-align: center;
+}
+
+.rotar{
+    position: relative;
+}
+.rotar img{
+    width: 60%;
+    vertical-align: top; /*se posiciona correctamente en vertical */
+    margin: 10px;
+    border-radius: 100%;
+}
+
+.rotar p{
+    position: absolute;
+    visibility: hidden;
+    top: 40%;
+    padding-right: 20%;
+    padding-left: 20%;
+
+}
+
+.rotar:hover img{
+    transform: rotateY(180deg);
+    transition: all .3s ease-in;
+    opacity: 0.1;
+}
+
+
+.rotar:hover p{
+    animation-delay: 3s;
+    visibility: visible;
+}
+
+/*----------------------Pagina de contacto-----------------------*/
+
+/*imagen de portada*/
+.fondo{
+    background: url("../imagenes/cordi.jpg");
+    width: 100%;
+    background-repeat: round;
+
+}
+.formulario{
+    text-align: center;
+    margin-top: 5%;
+
+}
+.formulariocontacto{
+    border: 1px solid black;
+    border-radius: 40px;
+    background: rgba(255,255,255,0.3);
+    padding: 5%;
+    margin: 3%;
+    width: 60%;
+    margin-left: 13%;
+}
+
+.formulariocontacto *{
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.formulariocontacto label{
+    text-align: left;
+}
+.formulariocontacto textarea{
+    border-radius: 10px;
+}
+.field{
+    height: 30px;
+    border-radius: 10px;
+    background: gray;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+    padding-left: 2%;
+}
+
+.formulariocontacto .flexible{
+    display: inline-flex;
+    margin: 0;
+    width: 40%;
+    padding: 3%;
+}
+
+.formulariocontacto .flexible a{
+    padding: 10px;
+}
+
+#exito{
+    opacity: 0;
+}
+
+#exito:target {
+    opacity: 1;
+    transition: 0.5s;
+}
